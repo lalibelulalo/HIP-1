@@ -1,5 +1,10 @@
 ---
 title: "HIP"
+knit: (function(inputFile, encoding) {
+  rmarkdown::render(inputFile,
+  encoding = encoding,
+  output_dir = "docs",
+  output_file=file.path(dirname(inputFile), 'docs', 'index.html')) })
 author: "Eduardo PM"
 date: "2023-07-27"
 output: html_document
